@@ -27,7 +27,7 @@ document.querySelectorAll('.submit-button').forEach(button => {
             imageIncorrect.style.height = '0px';
 
             score++;
-            scoreCounter.innerHTML = 'Score: ' + score + '/3';
+            scoreCounter.innerHTML = 'Score: ' + score + '/10';
         } else {
             submitButton.classList.add('incorrect-answer-button');
             inputBox.style.backgroundColor = '#ff5555'; 
