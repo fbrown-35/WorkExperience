@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="score-counter">Score: 0/3</p>
 
+    <div class="container">
+        <header>
+            <h1>Data & Binary Quiz</h1>
+            <p>Questions on data units and binary.</p>
+        </header>
+
+        <main>
+
+            <section class="question-box" data-correct-answer="1000">
+                <p class="question-text">1. How many MB in 1 GB?</p>
+                <input type="text" class="answer-input" placeholder="Your answer">
+                <button class="submit-button">Submit</button>
+                <img src="assets/correct.png" alt="Well Done!" class="img-correct">
+                <img src="assets/incorrect.png" alt="You're stupid!" class="img-incorrect">
+
+            </section>
+
+            <section class="question-box" data-correct-answer="00000101">
+                <p class="question-text">2. What is decimal 5 in 8-bit binary?</p>
+                <p class="number-grid">|  128  |  64  |  32  |  16  |   8   |   4   |   2   |   1  |</p>
+                <input type="text" class="answer-input" placeholder="e.g., 00000000">
+                <button class="submit-button">Submit</button>
+                <img src="assets/correct.png" alt="Well Done!" class="img-correct">
+                <img src="assets/incorrect.png" alt="You're stupid!" class="img-incorrect">
+            </section>
+
+            <section class="question-box" data-correct-answer="170">
+                <p class="question-text">3. What is binary 10101010 in decimal?</p>
+                <input type="text" class="answer-input" placeholder="Your answer">
+                <button class="submit-button">Submit</button>
+                <img src="assets/correct.png" alt="Well Done!" class="img-correct">
+                <img src="assets/incorrect.png" alt="You're stupid!" class="img-incorrect">
+            </section>
+
+        </main>
+    </div>
+
+    <img src="assets/easter-egg.png" alt="Jerome Thompson Easter Egg" id="easter-egg">
+
+    <script src="script.js"></script>
+</body>
+</html>
