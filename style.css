@@ -1,87 +1,59 @@
-
 body {
-    font-family: sans-serif; 
-    background-color: #f0f0f0; 
+    font-family: sans-serif;
+    background-color: #e0f7fa;
     margin: 0;
     padding: 20px;
 }
-
 .container {
     background-color: white;
-    max-width: 600px; 
+    max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 header {
     text-align: center;
     margin-bottom: 20px;
 }
-
 h1 {
     color: #333;
 }
-
 p {
     color: #555;
 }
-
-#easter-egg {
-    opacity: 0;
-    width: 10%;
-    height:auto;
-    margin: 20px;
-}
-
-#easter-egg:hover {
-    opacity: 0.5;
-}
-
-#easter-egg:active {
-    opacity: 1;
-    width: 100vw;
-    height: auto;
-}
-
 .score-counter {
-    font-size: 50;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: white;
+    padding: 10px;
     border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    max-width: 7%;
-    text-align: center;
-    padding: 20px;
+    font-size: 24px;
 }
-
-#score:active {
-    opacity: 1;
-}
-
 .number-grid {
     padding-left: 7px;
     font-size: 15px;
     word-spacing: 5px;
+    font-family: monospace;
 }
-
 .question-box {
     border: 1px solid #eee;
     padding: 15px;
     margin-bottom: 15px;
     background-color: #f9f9f9;
 }
-
 .question-text {
     font-size: 1.1em;
     margin-bottom: 10px;
 }
-
 .img-correct {
     opacity: 0;
     height: 0px;
     width: auto;
     margin: 10px;
 }
-
 .img-incorrect {
     opacity: 0;
     height: 0px;
@@ -89,35 +61,49 @@ p {
     margin: 10px;
 }
 .answer-input {
-    width: calc(100% - 70px);
+    width: 200px;
     padding: 8px;
     margin-right: 10px;
     border: 1px solid #ccc;
-    word-spacing: 30px;
+    font-family: monospace;
 }
-
 .submit-button {
     margin-top: 20px;
     padding: 8px 15px;
-    background-color: #888;
+    background-color: #007bff;
     color: white;
     border: none;
     cursor: pointer;
 }
-
 .submit-button:hover {
-    background-color: #00f;
+    background-color: #0056b3;
 }
-
 .submit-button:active {
-    background-color: #f00;
+    background-color: #004085;
 }
-
-footer {
+.correct-answer-button {
+    background-color: #28a745;
+}
+.incorrect-answer-button {
+    background-color: #dc3545;
+}
+.tab-bar {
     text-align: center;
-    margin-top: 20px;
-    padding-top: 10px;
-    border-top: 1px solid #eee;
-    color: #777;
-    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+.tab-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 2px;
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+.tab-button.active {
+    background-color: #007bff;
+    color: white;
+    border-bottom: 2px solid #0056b3;
+}
+.tab-page.hidden {
+    display: none;
 }
